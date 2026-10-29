@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto | URBAN</title>
+    <meta name="description" content="Distribuidor líder de pinturas automotrices premium, ofreciendo soluciones de acabado de alto rendimiento, igualación de color de precisión y asesoría técnica especializada para talleres y profesionales del sector.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="index.html" class="logo"><img src="img/LogoUrban.webp" alt="Urban Logo"><span>URBAN</span></a>
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">&#9776;</button>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contáctanos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contáctanos</h1>
+                <p class="lead light">Estamos aquí para ayudarte</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container contact-grid">
+                <div>
+                    <h2>Información de Contacto</h2>
+                    <p class="lead">Comunícate con nosotros por cualquiera de estos medios.</p>
+                    <div class="info">
+                        <h4>Teléfono</h4>
+                        <p>(555) 123-4567</p>
+                        <p class="muted">Lunes a Sábado, 8:00 - 18:00</p>
+                    </div>
+                    <div class="info">
+                        <h4>Email</h4>
+                        <p>info@urbanpinturas.com</p>
+                        <p class="muted">Respuesta en menos de 24hrs</p>
+                    </div>
+                    <div class="info">
+                        <h4>Sucursal Principal</h4>
+                        <p>Av. Revolución 1520, Col. Centro, CDMX</p>
+                        <p class="muted">CP 06000</p>
+                    </div>
+                    <div class="info">
+                        <h4>WhatsApp</h4>
+                        <p>+52 (555) 123-4567</p>
+                        <p class="muted">Atención inmediata</p>
+                    </div>
+                </div>
+                <form id="contactForm" class="card">
+                    <h3>Envíanos un Mensaje</h3>
+                    <label for="nombre">Nombre Completo</label><input id="nombre" name="nombre" required>
+                    <label for="email">Email</label><input id="email" name="email" type="email" required>
+                    <label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel">
+                    <label for="sucursal">Sucursal</label>
+                    <select id="sucursal" name="sucursal">
+                        <option value="">Selecciona sucursal</option>
+                        <option>URBAN Centro</option>
+                        <option>URBAN Norte</option>
+                        <option>URBAN Sur</option>
+                        <option>URBAN Oriente</option>
+                        <option>URBAN Poniente</option>
+                    </select>
+                    <label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" required></textarea>
+                    <button class="btn btn-primary" type="submit">Enviar Mensaje</button>
+                    <p class="msg" id="msg" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo"><img src="img/LogoUrban.webp" alt="Urban"><span>URBAN</span></a>
+                <p>Tu distribuidor de confianza en pintura automotriz. Calidad, variedad y servicio profesional en cada sucursal.</p>
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <p>(555) 123-4567</p>
+                <p>info@urbanpinturas.com</p>
+                <p>Lun - Sáb: 8:00 - 18:00</p>
+            </div>
+            <div>
+                <h4>Sucursal Principal</h4>
+                <p>Av. Revolución 1520, Col. Centro, Ciudad de México, CP 06000</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 URBAN Pinturas Automotriz. Todos los derechos reservados.</p>
+            <p><a href="#">Aviso de Privacidad</a> <a href="#">Términos</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>                                                                                                                                      
