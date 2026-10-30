@@ -233,7 +233,12 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 /*HERO*/
 .hero {
-  background: linear-gradient(to bottom right, #000, #111827, #000);
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 45% 60% at 0% 55%, hsl(0 78% 50% / .24), transparent 70%),
+    radial-gradient(ellipse 40% 50% at 78% 85%, hsl(0 78% 50% / .18), transparent 70%),
+    linear-gradient(135deg, #07080e 0%, #0e1122 50%, #07080e 100%);
   color: #fff;
   padding: 8rem 0 6rem;
   min-height: 90vh;
@@ -270,11 +275,20 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 
 .text-accent {
+  position: relative;
   display: block;
+  width: fit-content;
   color: var(--primary);
-  text-decoration: underline;
-  text-decoration-color: #fff;
-  text-underline-offset: 6px;
+}
+
+.text-accent::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -.1em;
+  height: .28em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 Q150 -3 298 3 Q150 5 2 11 Z' fill='%23dc2626'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
 }
 
 .hero .lead { margin-bottom: 2rem; }
@@ -306,13 +320,22 @@ ul { list-style: none; margin: 0; padding: 0; }
   font-size: .85rem;
 }
 
+.hero-visual {
+  position: relative;
+  animation: float 6s ease-in-out 1s infinite;
+}
+
 .hero-image-container {
-  animation: float 3s ease-in-out 1s infinite;
+  position: relative; 
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .5), 0 30px 120px -10px hsl(0 78% 50% / .35);
 }
 
 @keyframes float {
   0%, 100% { translate: 0 0; }
-  50%      { translate: 0 -14px; }
+  50% { translate: 0 -14px; }
 }
 
 .hero-image-container img {
@@ -327,7 +350,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   background-position: center;
   color: #fff;
   text-align: center;
-  padding: 9rem 0 4rem; 
+  padding: 9rem 0 4rem;
 }
 
 .page-hero .lead { margin: 0 auto; }
@@ -858,6 +881,7 @@ textarea { min-height: 7.5rem; resize: vertical; }
   .section { padding: 3.5rem 0; }
   .hero { padding: 7.5rem 0 3.5rem; min-height: auto; }
   .story h2 { font-size: 2rem; }
+  .hero-visual::before { display: none; }
 }
 
 @media (max-width: 640px) {
@@ -875,4 +899,5 @@ textarea { min-height: 7.5rem; resize: vertical; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
+  .hero-visual { animation: none; }
 }
