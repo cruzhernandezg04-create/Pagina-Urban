@@ -5,34 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sucursales | URBAN</title>
-    <meta name="description" content="Distribuidor líder de pinturas automotrices premium. Conoce nuestras 5 ubicaciones estratégicas.">
+    <meta name="description" content="Encuentra la sucursal URBAN más cercana: Esparta, Tláhuac, Izcalli, Naucalpan y Tultepec. Direcciones, teléfonos y mapa.">
+    <link rel="icon" href="img/LogoUrban.webp" type="image/webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="site-header">
         <div class="container nav">
-            <a href="index.html" class="logo"><img src="img/LogoUrban.webp" alt="Urban Logo"><span>URBAN</span></a>
-            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">&#9776;</button>
+            <a href="index.html" class="logo"><img src="img/LogoUrban.webp" alt="Logo de URBAN" width="40" height="40"><span>URBAN</span></a>
+            <button type="button" class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
             <ul id="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="sucursales.html" class="active">Sucursales</a></li>
+                <li><a href="sucursales.html" aria-current="page">Sucursales</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contáctanos</a></li>
             </ul>
         </div>
     </header>
 
-    <main>
+    <main id="contenido">
         <section class="page-hero">
-            <div class="container center" data-aos="fade-down" data-aos-duration="1000">
+            <div class="container" data-aos="fade-down">
                 <p class="kicker light">Encuéntranos</p>
                 <h1>Nuestras Sucursales</h1>
                 <p class="lead light">5 ubicaciones estratégicas para estar siempre cerca de ti.</p>
@@ -41,163 +43,77 @@
 
         <section class="section">
             <div class="container">
-                <div class="grid grid-3" data-aos="fade-up" data-aos-duration="1000">
-
-                    <!-- Sucursal Esparta -->
-                    <article class="card" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; border-radius: 1.25rem;">
+                <div class="grid grid-3" data-aos="fade-up">
+                    <article class="card card--branch">
                         <div>
-                            <div style="border-radius: 0.75rem; overflow: hidden; margin-bottom: 1.25rem; height: 160px;">
-                                <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <div class="map-frame map-frame--sm">
+                                <iframe src="https://maps.google.com/maps?q=AUTOCOLORS+ESPARTA%2C+2+%C3%81lamos.+03400%2C+M%C3%A9xico&output=embed" title="Mapa de Sucursal Esparta" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
                             </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Sucursal Esparta</h3>
-                            <p class="muted" style="font-size: 0.9rem; margin-bottom: 1.25rem;"></p>
-
-                            <div style="display: flex; gap: 0.75rem; align-items: flex-start; margin-bottom: 0.75rem; font-size: 0.9rem;">
-                                <i class="fa-solid fa-location-dot" style="color: var(--primary); margin-top: 0.2rem;"></i>
-                                <span class="muted">AUTOCOLORS ESPARTA, 2 Álamos. 03400</span>
-                            </div>
-                            <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; font-size: 0.9rem;">
-                                <i class="fa-solid fa-phone" style="color: var(--primary);"></i>
-                                <span class="muted">55 7822 2221</span>
-                            </div>
-                            <!-- <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; font-size: 0.9rem;"><i class="fa-solid fa-envelope" style="color: var(--primary);"></i><span class="muted">correo@ejemplo.com</span></div> -->
-                            <!-- <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.5rem; font-size: 0.9rem;"><i class="fa-solid fa-clock" style="color: var(--primary);"></i><span class="muted">Lun - Sáb: 8:00 - 18:00</span></div> -->
+                            <h3>Sucursal Esparta</h3>
+                            <p class="info-row"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span class="muted">AUTOCOLORS ESPARTA, 2 Álamos. 03400</span></p>
+                            <p class="info-row"><i class="fa-solid fa-phone" aria-hidden="true"></i> <a class="muted" href="tel:+525578222221">55 7822 2221</a></p>
                         </div>
-
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; border-top: 1px solid var(--border); padding-top: 1.25rem;">
-                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline" style="border-color: var(--border); color: var(--fg); padding: 0.6rem; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
-                                <i class="fa-solid fa-route"></i> Cómo Llegar
-                            </a>
-                            <a href="contacto.html" class="btn btn-primary" style="padding: 0.6rem; font-size: 0.85rem; display: flex; align-items: center; justify-content: center;">
-                                Contactar
-                            </a>
+                        <div class="card-actions">
+                            <a href="https://www.google.com/maps/search/?api=1&query=AUTOCOLORS+ESPARTA%2C+2+%C3%81lamos.+03400%2C+M%C3%A9xico" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="fa-solid fa-route" aria-hidden="true"></i> Cómo Llegar</a>
+                            <a href="contacto.html" class="btn btn-primary">Contactar</a>
                         </div>
                     </article>
-
-                    <!-- Sucursal Tláhuac -->
-                    <article class="card" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; border-radius: 1.25rem;">
+                    <article class="card card--branch">
                         <div>
-                            <div style="border-radius: 0.75rem; overflow: hidden; margin-bottom: 1.25rem; height: 160px;">
-                                <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <div class="map-frame map-frame--sm">
+                                <iframe src="https://maps.google.com/maps?q=Canal+de+Chalco+730%2C+CDMX%2C+09970%2C+M%C3%A9xico&output=embed" title="Mapa de Sucursal Tláhuac" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
                             </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Sucursal Tláhuac</h3>
-                            <p class="muted" style="font-size: 0.9rem; margin-bottom: 1.25rem;"></p>
-
-                            <div style="display: flex; gap: 0.75rem; align-items: flex-start; margin-bottom: 0.75rem; font-size: 0.9rem;">
-                                <i class="fa-solid fa-location-dot" style="color: var(--primary); margin-top: 0.2rem;"></i>
-                                <span class="muted">Canal de Chalco 730, CDMX, 09970</span>
-                            </div>
-                            <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; font-size: 0.9rem;">
-                                <i class="fa-solid fa-phone" style="color: var(--primary);"></i>
-                                <span class="muted">55 7940 4687</span>
-                            </div>
-                            <!-- <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; font-size: 0.9rem;"><i class="fa-solid fa-envelope" style="color: var(--primary);"></i><span class="muted">correo@ejemplo.com</span></div> -->
-                            <!-- <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.5rem; font-size: 0.9rem;"><i class="fa-solid fa-clock" style="color: var(--primary);"></i><span class="muted">Lun - Sáb: 8:00 - 18:00</span></div> -->
+                            <h3>Sucursal Tláhuac</h3>
+                            <p class="info-row"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span class="muted">Canal de Chalco 730, CDMX, 09970</span></p>
+                            <p class="info-row"><i class="fa-solid fa-phone" aria-hidden="true"></i> <a class="muted" href="tel:+525579404687">55 7940 4687</a></p>
                         </div>
-
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; border-top: 1px solid var(--border); padding-top: 1.25rem;">
-                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline" style="border-color: var(--border); color: var(--fg); padding: 0.6rem; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
-                                <i class="fa-solid fa-route"></i> Cómo Llegar
-                            </a>
-                            <a href="contacto.html" class="btn btn-primary" style="padding: 0.6rem; font-size: 0.85rem; display: flex; align-items: center; justify-content: center;">
-                                Contactar
-                            </a>
+                        <div class="card-actions">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Canal+de+Chalco+730%2C+CDMX%2C+09970%2C+M%C3%A9xico" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="fa-solid fa-route" aria-hidden="true"></i> Cómo Llegar</a>
+                            <a href="contacto.html" class="btn btn-primary">Contactar</a>
                         </div>
                     </article>
-
-                    <!-- Sucursal Izcalli -->
-                    <article class="card" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; border-radius: 1.25rem;">
+                    <article class="card card--branch">
                         <div>
-                            <div style="border-radius: 0.75rem; overflow: hidden; margin-bottom: 1.25rem; height: 160px;">
-                                <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <div class="map-frame map-frame--sm">
+                                <iframe src="https://maps.google.com/maps?q=Rosales+29B.+005+San+Isidro%2C+54730%2C+M%C3%A9xico&output=embed" title="Mapa de Sucursal Izcalli" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
                             </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Sucursal Izcalli</h3>
-                            <p class="muted" style="font-size: 0.9rem; margin-bottom: 1.25rem;"></p>
-
-                            <div style="display: flex; gap: 0.75rem; align-items: flex-start; margin-bottom: 0.75rem; font-size: 0.9rem;">
-                                <i class="fa-solid fa-location-dot" style="color: var(--primary); margin-top: 0.2rem;"></i>
-                                <span class="muted">Rosales 29B. 005 San Isidro, 54730</span>
-                            </div>
-                            <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; font-size: 0.9rem;">
-                                <i class="fa-solid fa-phone" style="color: var(--primary);"></i>
-                                <span class="muted">55 5868 6626</span>
-                            </div>
-                            <!-- <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; font-size: 0.9rem;"><i class="fa-solid fa-envelope" style="color: var(--primary);"></i><span class="muted">correo@ejemplo.com</span></div> -->
-                            <!-- <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.5rem; font-size: 0.9rem;"><i class="fa-solid fa-clock" style="color: var(--primary);"></i><span class="muted">Lun - Sáb: 8:00 - 18:00</span></div> -->
+                            <h3>Sucursal Izcalli</h3>
+                            <p class="info-row"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span class="muted">Rosales 29B. 005 San Isidro, 54730</span></p>
+                            <p class="info-row"><i class="fa-solid fa-phone" aria-hidden="true"></i> <a class="muted" href="tel:+525558686626">55 5868 6626</a></p>
                         </div>
-
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; border-top: 1px solid var(--border); padding-top: 1.25rem;">
-                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline" style="border-color: var(--border); color: var(--fg); padding: 0.6rem; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
-                                <i class="fa-solid fa-route"></i> Cómo Llegar
-                            </a>
-                            <a href="contacto.html" class="btn btn-primary" style="padding: 0.6rem; font-size: 0.85rem; display: flex; align-items: center; justify-content: center;">
-                                Contactar
-                            </a>
+                        <div class="card-actions">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Rosales+29B.+005+San+Isidro%2C+54730%2C+M%C3%A9xico" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="fa-solid fa-route" aria-hidden="true"></i> Cómo Llegar</a>
+                            <a href="contacto.html" class="btn btn-primary">Contactar</a>
                         </div>
                     </article>
-
-                    <!-- Sucursal Naucalpan -->
-                    <article class="card" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; border-radius: 1.25rem;">
+                    <article class="card card--branch">
                         <div>
-                           <div style="border-radius: 0.75rem; overflow: hidden; margin-bottom: 1.25rem; height: 160px;">
-                                <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <div class="map-frame map-frame--sm">
+                                <iframe src="https://maps.google.com/maps?q=Torre+Azul+3.+Guadalupe+las+Torres%2C+54743%2C+M%C3%A9xico&output=embed" title="Mapa de Sucursal Naucalpan" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
                             </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Sucursal Naucalpan</h3>
-                            <p class="muted" style="font-size: 0.9rem; margin-bottom: 1.25rem;"></p>
-
-                            <div style="display: flex; gap: 0.75rem; align-items: flex-start; margin-bottom: 0.75rem; font-size: 0.9rem;">
-                                <i class="fa-solid fa-location-dot" style="color: var(--primary); margin-top: 0.2rem;"></i>
-                                <span class="muted">Torre Azul 3. Guadalupe las Torres, 54743</span>
-                            </div>
-                            <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; font-size: 0.9rem;">
-                                <i class="fa-solid fa-phone" style="color: var(--primary);"></i>
-                                <span class="muted">55 2505 2214</span>
-                            </div>
-                            <!-- <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; font-size: 0.9rem;"><i class="fa-solid fa-envelope" style="color: var(--primary);"></i><span class="muted">correo@ejemplo.com</span></div> -->
-                            <!-- <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.5rem; font-size: 0.9rem;"><i class="fa-solid fa-clock" style="color: var(--primary);"></i><span class="muted">Lun - Sáb: 8:00 - 18:00</span></div> -->
+                            <h3>Sucursal Naucalpan</h3>
+                            <p class="info-row"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span class="muted">Torre Azul 3. Guadalupe las Torres, 54743</span></p>
+                            <p class="info-row"><i class="fa-solid fa-phone" aria-hidden="true"></i> <a class="muted" href="tel:+525525052214">55 2505 2214</a></p>
                         </div>
-
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; border-top: 1px solid var(--border); padding-top: 1.25rem;">
-                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline" style="border-color: var(--border); color: var(--fg); padding: 0.6rem; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
-                                <i class="fa-solid fa-route"></i> Cómo Llegar
-                            </a>
-                            <a href="contacto.html" class="btn btn-primary" style="padding: 0.6rem; font-size: 0.85rem; display: flex; align-items: center; justify-content: center;">
-                                Contactar
-                            </a>
+                        <div class="card-actions">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Torre+Azul+3.+Guadalupe+las+Torres%2C+54743%2C+M%C3%A9xico" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="fa-solid fa-route" aria-hidden="true"></i> Cómo Llegar</a>
+                            <a href="contacto.html" class="btn btn-primary">Contactar</a>
                         </div>
                     </article>
-
-                    <!-- Sucursal Tultepec -->
-                    <article class="card" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; border-radius: 1.25rem;">
+                    <article class="card card--branch">
                         <div>
-                            <div style="border-radius: 0.75rem; overflow: hidden; margin-bottom: 1.25rem; height: 160px;">
-                                <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <div class="map-frame map-frame--sm">
+                                <iframe src="https://maps.google.com/maps?q=C.+10+de+Junio%2C+Santiago+Teyahualco%2C+54980+Tultepec%2C+M%C3%A9xico&output=embed" title="Mapa de Sucursal Tultepec" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
                             </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Sucursal Tultepec</h3>
-                            <p class="muted" style="font-size: 0.9rem; margin-bottom: 1.25rem;"></p>
-
-                            <div style="display: flex; gap: 0.75rem; align-items: flex-start; margin-bottom: 0.75rem; font-size: 0.9rem;">
-                                <i class="fa-solid fa-location-dot" style="color: var(--primary); margin-top: 0.2rem;"></i>
-                                <span class="muted">C. 10 de Junio, Santiago Teyahualco, 54980 Tultepec</span>
-                            </div>
-                            <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; font-size: 0.9rem;">
-                                <i class="fa-solid fa-phone" style="color: var(--primary);"></i>
-                                <span class="muted">55 5885 6172</span>
-                            </div>
-                            <!-- <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; font-size: 0.9rem;"><i class="fa-solid fa-envelope" style="color: var(--primary);"></i><span class="muted">correo@ejemplo.com</span></div> -->
-                            <!-- <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.5rem; font-size: 0.9rem;"><i class="fa-solid fa-clock" style="color: var(--primary);"></i><span class="muted">Lun - Sáb: 8:00 - 18:00</span></div> -->
+                            <h3>Sucursal Tultepec</h3>
+                            <p class="info-row"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span class="muted">C. 10 de Junio, Santiago Teyahualco, 54980 Tultepec</span></p>
+                            <p class="info-row"><i class="fa-solid fa-phone" aria-hidden="true"></i> <a class="muted" href="tel:+525558856172">55 5885 6172</a></p>
                         </div>
-
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; border-top: 1px solid var(--border); padding-top: 1.25rem;">
-                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline" style="border-color: var(--border); color: var(--fg); padding: 0.6rem; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
-                                <i class="fa-solid fa-route"></i> Cómo Llegar
-                            </a>
-                            <a href="contacto.html" class="btn btn-primary" style="padding: 0.6rem; font-size: 0.85rem; display: flex; align-items: center; justify-content: center;">
-                                Contactar
-                            </a>
+                        <div class="card-actions">
+                            <a href="https://www.google.com/maps/search/?api=1&query=C.+10+de+Junio%2C+Santiago+Teyahualco%2C+54980+Tultepec%2C+M%C3%A9xico" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="fa-solid fa-route" aria-hidden="true"></i> Cómo Llegar</a>
+                            <a href="contacto.html" class="btn btn-primary">Contactar</a>
                         </div>
                     </article>
-
                 </div>
             </div>
         </section>
@@ -206,32 +122,32 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
-                <a href="index.html" class="logo" style="color: #fff;"><img src="img/LogoUrban.webp" alt="Urban"><span>URBAN</span></a>
-                <p style="margin-top: 1rem; font-size: 0.9rem;">Tu distribuidor de confianza en pintura automotriz. Calidad, variedad y servicio profesional en cada sucursal.</p>
+                <a href="index.html" class="logo"><img src="img/LogoUrban.webp" alt="Logo de URBAN" width="40" height="40" loading="lazy"><span>URBAN</span></a>
+                <p class="footer-text">Tu distribuidor de confianza en pintura automotriz. Calidad, variedad y servicio profesional en cada sucursal.</p>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div>
-                <h4 style="margin-bottom: 1.2rem;">Navegación</h4>
+                <h4>Navegación</h4>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
-                    <li><a href="sucursales.html" class="active">Sucursales</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contáctanos</a></li>
                 </ul>
             </div>
             <div>
-                <h4 style="margin-bottom: 1.2rem;">Contacto</h4>
-                <p style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-phone" style="color: var(--primary);"></i> (555) 123-4567</p>
-                <p style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope" style="color: var(--primary);"></i> info@urbanpinturas.com</p>
-                <p style="display: flex; align-items: center; gap: 0.5rem;"><i class="fa-solid fa-clock" style="color: var(--primary);"></i> Lun - Sáb: 8:00 - 18:00</p>
+                <h4>Contacto</h4>
+                <p class="footer-line"><i class="fa-solid fa-phone" aria-hidden="true"></i> (555) 123-4567</p>
+                <p class="footer-line"><i class="fa-solid fa-envelope" aria-hidden="true"></i> info@urbanpinturas.com</p>
+                <p class="footer-line"><i class="fa-solid fa-clock" aria-hidden="true"></i> Lun - Sáb: 8:00 - 18:00</p>
             </div>
             <div>
-                <h4 style="margin-bottom: 1.2rem;">Sucursal Principal</h4>
-                <p style="display: flex; align-items: flex-start; gap: 0.5rem;"><i class="fa-solid fa-location-dot" style="color: var(--primary); margin-top: 0.2rem;"></i> Av. Revolución 1520, Col. Centro, Ciudad de México, CP 06000</p>
+                <h4>Sucursal Principal</h4>
+                <p class="footer-line"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Av. Revolución 1520, Col. Centro, Ciudad de México, CP 06000</p>
             </div>
         </div>
         <div class="container footer-bottom">
@@ -241,9 +157,6 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ once: true, offset: 80, duration: 800 });
-    </script>
     <script src="script.js"></script>
 </body>
 

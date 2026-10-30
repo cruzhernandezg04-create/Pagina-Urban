@@ -5,28 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>URBAN | Distribuidor Líder en Pintura Automotriz</title>
-    <meta name="description"
-        content="Distribuidor líder de pinturas automotrices premium, ofreciendo soluciones de acabado de alto rendimiento, igualación de color de precisión y asesoría técnica especializada.">
+    <meta name="description" content="Distribuidor líder de pinturas automotrices premium, ofreciendo soluciones de acabado de alto rendimiento, igualación de color de precisión y asesoría técnica especializada.">
+    <link rel="icon" href="img/LogoUrban.webp" type="image/webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
-    <!-- FontAwesome para íconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS CSS CDN -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="site-header">
         <div class="container nav">
-            <a href="index.html" class="logo"><img src="img/LogoUrban.webp" alt="Urban Logo"><span>URBAN</span></a>
-            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">&#9776;</button>
+            <a href="index.html" class="logo"><img src="img/LogoUrban.webp" alt="Logo de URBAN" width="40" height="40"><span>URBAN</span></a>
+            <button type="button" class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
             <ul id="menu">
-                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="sucursales.html">Sucursales</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -35,221 +32,139 @@
         </div>
     </header>
 
-    <main>
+    <main id="contenido">
         <section class="hero">
             <div class="container hero-grid">
-                <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
-                    <span
-                        style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(220, 38, 38, 0.15); border: 1px solid rgba(220, 38, 38, 0.3); color: #ff6b6b; font-size: 0.8rem; font-weight: 600; padding: 0.35rem 1rem; border-radius: 999px; margin-bottom: 1.25rem;">
-                        <i class="fa-solid fa-sparkles"></i> Distribuidor Líder en Pintura Automotriz
-                    </span>
-                    <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 1.25rem;">
-                        El Color que <br><span class="text-accent"
-                            style="color: var(--primary); text-decoration: underline; text-decoration-color: #fff; text-underline-offset: 6px;">Transforma</span><br>
-                        Tu Vehículo
-                    </h1>
-                    <p class="lead light" style="margin-bottom: 2rem;">
-                        Más de <strong>10,000 tonalidades</strong> de pintura automotriz profesional. Calidad premium,
-                        asesoría experta y las mejores marcas del mercado en un solo lugar.
-                    </p>
-                    <div class="actions" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3.5rem;">
-                        <a href="productos.html" class="btn btn-primary"
-                            style="display: flex; align-items: center; gap: 0.5rem;">
-                            Ver Productos <i class="fa-solid fa-arrow-right"></i>
-                        </a>
+                <div data-aos="fade-right">
+                    <span class="hero-badge"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> Distribuidor Líder en Pintura Automotriz</span>
+                    <h1>El Color que <span class="text-accent">Transforma</span> Tu Vehículo</h1>
+                    <p class="lead light">Más de <strong>10,000 tonalidades</strong> de pintura automotriz profesional. Calidad premium, asesoría experta y las mejores marcas del mercado en un solo lugar.</p>
+                    <div class="actions">
+                        <a href="productos.html" class="btn btn-primary">Ver Productos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         <a href="contacto.html" class="btn btn-outline">Contáctanos</a>
                     </div>
-                    <div class="stats" style="display: flex; gap: 3rem; flex-wrap: wrap;">
-                        <div><strong style="color: var(--primary); font-size: 2rem;">5</strong><span
-                                style="color: rgba(255,255,255,0.7); font-size: 0.85rem;">Sucursales</span></div>
-                        <div><strong style="color: var(--primary); font-size: 2rem;">10K+</strong><span
-                                style="color: rgba(255,255,255,0.7); font-size: 0.85rem;">Tonalidades</span></div>
-                        <div><strong style="color: var(--primary); font-size: 2rem;">15+</strong><span
-                                style="color: rgba(255,255,255,0.7); font-size: 0.85rem;">Años de Experiencia</span>
-                        </div>
+                    <div class="stats">
+                        <div><strong>5</strong><span>Sucursales</span></div>
+                        <div><strong>10K+</strong><span>Tonalidades</span></div>
+                        <div><strong>15+</strong><span>Años de Experiencia</span></div>
                     </div>
                 </div>
-
-                <div class="hero-image-container" data-aos="fade-left" data-aos-duration="1000">
-                    <div
-                        style="background: #fff; border-radius: 1.5rem; padding: 1.5rem; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
-                        <img src="img/Hero.webp" alt="Latas de Pintura Automotriz URBAN"
-                            style="border-radius: 1rem; width: 100%; object-fit: cover;">
-                    </div>
+                <div class="hero-image-container" data-aos="fade-left">
+                    <img src="img/Hero.webp" alt="Latas de pintura automotriz URBAN" width="1024" height="1024" fetchpriority="high">
                 </div>
             </div>
         </section>
 
         <section class="section">
             <div class="container about">
-                <div class="about-img" data-aos="fade-right" data-aos-duration="1000" style="position: relative;">
-                    <img src="img/Segunda.webp" alt="Sucursal URBAN"
-                        style="border-radius: 1.25rem; width: 100%; object-fit: cover;">
-                    <div class="badge"
-                        style="position: absolute; right: 1.5rem; bottom: -1.25rem; background: var(--primary); color: #fff; border-radius: 1rem; padding: 1.25rem 1.75rem; box-shadow: 0 10px 25px rgba(220, 38, 38, 0.4);">
-                        <strong style="font-size: 2rem; display: block; line-height: 1;">15+</strong>
-                        <span style="font-size: 0.85rem;">Años de experiencia</span>
+                <div class="about-img" data-aos="fade-right">
+                    <img src="img/Segunda.webp" alt="Interior de una sucursal URBAN" width="1344" height="768" loading="lazy">
+                    <div class="badge">
+                        <strong>15+</strong>
+                        <span>Años de experiencia</span>
                     </div>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1000">
+                <div data-aos="fade-left">
                     <p class="kicker">Sobre Nosotros</p>
-                    <h2 style="font-size: 2.25rem; margin-bottom: 1.25rem;">Tu Aliado en Pintura Automotriz Profesional
-                    </h2>
-                    <p class="muted" style="margin-bottom: 1.5rem;">
-                        En URBAN somos más que un distribuidor de pinturas. Somos el socio estratégico que impulsa el
-                        éxito de talleres, carrocerías y profesionales del repintado automotriz. Con <strong>5
-                            sucursales</strong> y un equipo de expertos, te brindamos las herramientas, productos y
-                        conocimiento que necesitas para lograr acabados impecables.
-                    </p>
-                    <ul class="checks" style="display: grid; gap: 0.75rem;">
-                        <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 500;"><i
-                                class="fa-regular fa-circle-check"
-                                style="color: var(--primary); font-size: 1.1rem;"></i> Más de 15 años de experiencia en
-                            el mercado</li>
-                        <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 500;"><i
-                                class="fa-regular fa-circle-check"
-                                style="color: var(--primary); font-size: 1.1rem;"></i> Asesoría técnica gratuita con
-                            especialistas</li>
-                        <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 500;"><i
-                                class="fa-regular fa-circle-check"
-                                style="color: var(--primary); font-size: 1.1rem;"></i> Precios competitivos y
-                            promociones exclusivas</li>
-                        <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 500;"><i
-                                class="fa-regular fa-circle-check"
-                                style="color: var(--primary); font-size: 1.1rem;"></i> Envíos rápidos a todo el país
-                        </li>
-                        <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 500;"><i
-                                class="fa-regular fa-circle-check"
-                                style="color: var(--primary); font-size: 1.1rem;"></i> Garantía de calidad en todos
-                            nuestros productos</li>
+                    <h2>Tu Aliado en Pintura Automotriz Profesional</h2>
+                    <p class="muted about-text">En URBAN somos más que un distribuidor de pinturas. Somos el socio estratégico que impulsa el éxito de talleres, carrocerías y profesionales del repintado automotriz. Con <strong>5 sucursales</strong> y un equipo de expertos, te brindamos las herramientas, productos y conocimiento que necesitas para lograr acabados impecables.</p>
+                    <ul class="checks">
+                        <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Más de 15 años de experiencia en el mercado</li>
+                        <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Asesoría técnica gratuita con especialistas</li>
+                        <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Precios competitivos y promociones exclusivas</li>
+                        <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Envíos rápidos a todo el país</li>
+                        <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Garantía de calidad en todos nuestros productos</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section class="section alt" data-aos="fade-up" data-aos-duration="1000">
+        <section class="section alt" data-aos="fade-up">
             <div class="container">
                 <p class="kicker center">¿Quiénes Somos?</p>
-                <h2 class="center" style="margin-bottom: 3rem;">Nuestra Esencia</h2>
+                <h2 class="center section-title">Nuestra Esencia</h2>
                 <div class="grid grid-2">
-                    <article class="card" style="padding: 2.5rem; border-radius: 1.25rem;">
-                        <div
-                            style="background: rgba(220, 38, 38, 0.08); color: var(--primary); width: 3.5rem; height: 3.5rem; border-radius: 1rem; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 1.5rem;">
-                            <i class="fa-solid fa-bullseye"></i>
-                        </div>
-                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Misión</h3>
-                        <p class="muted" style="margin: 0;">Proveer a talleres y profesionales automotrices las mejores
-                            pinturas y materiales del mercado, con asesoría técnica especializada y un servicio que
-                            supere sus expectativas, impulsando la excelencia en cada acabado.</p>
+                    <article class="card card--lg">
+                        <div class="icon-box icon-box--lg"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+                        <h3>Misión</h3>
+                        <p>Proveer a talleres y profesionales automotrices las mejores pinturas y materiales del mercado, con asesoría técnica especializada y un servicio que supere sus expectativas, impulsando la excelencia en cada acabado.</p>
                     </article>
-                    <article class="card" style="padding: 2.5rem; border-radius: 1.25rem;">
-                        <div
-                            style="background: rgba(0, 0, 0, 0.08); color: var(--fg); width: 3.5rem; height: 3.5rem; border-radius: 1rem; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 1.5rem;">
-                            <i class="fa-solid fa-eye"></i>
-                        </div>
-                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Visión</h3>
-                        <p class="muted" style="margin: 0;">Ser el distribuidor de pintura automotriz líder y más
-                            confiable de México, reconocido por nuestra innovación, calidad y compromiso con el
-                            crecimiento de nuestros clientes y socios comerciales.</p>
+                    <article class="card card--lg">
+                        <div class="icon-box icon-box--lg icon-box--neutral"><i class="fa-solid fa-eye" aria-hidden="true"></i></div>
+                        <h3>Visión</h3>
+                        <p>Ser el distribuidor de pintura automotriz líder y más confiable de México, reconocido por nuestra innovación, calidad y compromiso con el crecimiento de nuestros clientes y socios comerciales.</p>
                     </article>
                 </div>
 
-                <h3 class="center sub" style="font-size: 2rem; margin-top: 5rem; margin-bottom: 2.5rem;">Nuestros
-                    Valores</h3>
+                <h3 class="center values-title">Nuestros Valores</h3>
                 <div class="grid grid-4">
-                    <article class="card center" style="padding: 2rem 1.5rem; border-radius: 1.25rem;">
-                        <div
-                            style="background: rgba(220, 38, 38, 0.08); color: var(--primary); width: 3rem; height: 3rem; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin: 0 auto 1.25rem;">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Calidad</h4>
-                        <p class="muted" style="margin: 0; font-size: 0.9rem;">Solo trabajamos con las marcas más
-                            reconocidas y confiables del mercado.</p>
+                    <article class="card card--value center">
+                        <div class="icon-box icon-box--center"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+                        <h4>Calidad</h4>
+                        <p class="muted">Solo trabajamos con las marcas más reconocidas y confiables del mercado.</p>
                     </article>
-                    <article class="card center" style="padding: 2rem 1.5rem; border-radius: 1.25rem;">
-                        <div
-                            style="background: rgba(220, 38, 38, 0.08); color: var(--primary); width: 3rem; height: 3rem; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin: 0 auto 1.25rem;">
-                            <i class="fa-solid fa-headset"></i>
-                        </div>
-                        <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Servicio</h4>
-                        <p class="muted" style="margin: 0; font-size: 0.9rem;">Asesoría técnica especializada y atención
-                            personalizada en cada visita.</p>
+                    <article class="card card--value center">
+                        <div class="icon-box icon-box--center"><i class="fa-solid fa-headset" aria-hidden="true"></i></div>
+                        <h4>Servicio</h4>
+                        <p class="muted">Asesoría técnica especializada y atención personalizada en cada visita.</p>
                     </article>
-                    <article class="card center" style="padding: 2rem 1.5rem; border-radius: 1.25rem;">
-                        <div
-                            style="background: rgba(220, 38, 38, 0.08); color: var(--primary); width: 3rem; height: 3rem; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin: 0 auto 1.25rem;">
-                            <i class="fa-solid fa-handshake"></i>
-                        </div>
-                        <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Compromiso</h4>
-                        <p class="muted" style="margin: 0; font-size: 0.9rem;">Nos comprometemos con el éxito de cada
-                            uno de nuestros clientes.</p>
+                    <article class="card card--value center">
+                        <div class="icon-box icon-box--center"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
+                        <h4>Compromiso</h4>
+                        <p class="muted">Nos comprometemos con el éxito de cada uno de nuestros clientes.</p>
                     </article>
-                    <article class="card center" style="padding: 2rem 1.5rem; border-radius: 1.25rem;">
-                        <div
-                            style="background: rgba(220, 38, 38, 0.08); color: var(--primary); width: 3rem; height: 3rem; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin: 0 auto 1.25rem;">
-                            <i class="fa-solid fa-lightbulb"></i>
-                        </div>
-                        <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Innovación</h4>
-                        <p class="muted" style="margin: 0; font-size: 0.9rem;">Siempre a la vanguardia con las últimas
-                            tecnologías en pintura automotriz.</p>
+                    <article class="card card--value center">
+                        <div class="icon-box icon-box--center"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div>
+                        <h4>Innovación</h4>
+                        <p class="muted">Siempre a la vanguardia con las últimas tecnologías en pintura automotriz.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="section" data-aos="fade-up" data-aos-duration="1000">
+        <section class="section" data-aos="fade-up">
             <div class="container center">
                 <p class="kicker">Alianzas Estratégicas</p>
                 <h2>Socios Comerciales</h2>
-                <p class="lead">Trabajamos con las marcas más reconocidas a nivel mundial para garantizar la mejor
-                    calidad en cada producto.</p>
-                <div class="grid grid-4" style="margin-top: 2.5rem;">
-                    <div class="card center" style="padding: 2.5rem 1rem; border-radius: 1.25rem;">
-                        <strong
-                            style="font-family: var(--font-heading); font-size: 2rem; color: var(--primary); display: block; margin-bottom: 0.5rem;">PPG</strong>
+                <p class="lead">Trabajamos con las marcas más reconocidas a nivel mundial para garantizar la mejor calidad en cada producto.</p>
+                <div class="grid grid-4 partners">
+                    <div class="card card--partner center">
+                        <strong class="partner-code">PPG</strong>
                         <span class="muted">PPG Industries</span>
                     </div>
-                    <div class="card center" style="padding: 2.5rem 1rem; border-radius: 1.25rem;">
-                        <strong
-                            style="font-family: var(--font-heading); font-size: 2rem; color: var(--primary); display: block; margin-bottom: 0.5rem;">SW</strong>
+                    <div class="card card--partner center">
+                        <strong class="partner-code">SW</strong>
                         <span class="muted">Sherwin-Williams</span>
                     </div>
-                    <div class="card center" style="padding: 2.5rem 1rem; border-radius: 1.25rem;">
-                        <strong
-                            style="font-family: var(--font-heading); font-size: 2rem; color: var(--primary); display: block; margin-bottom: 0.5rem;">AX</strong>
+                    <div class="card card--partner center">
+                        <strong class="partner-code">AX</strong>
                         <span class="muted">Axalta</span>
                     </div>
-                    <div class="card center" style="padding: 2.5rem 1rem; border-radius: 1.25rem;">
-                        <strong
-                            style="font-family: var(--font-heading); font-size: 2rem; color: var(--primary); display: block; margin-bottom: 0.5rem;">BA</strong>
+                    <div class="card card--partner center">
+                        <strong class="partner-code">BA</strong>
                         <span class="muted">BASF</span>
                     </div>
-                    <div class="card center" style="padding: 2.5rem 1rem; border-radius: 1.25rem;">
-                        <strong
-                            style="font-family: var(--font-heading); font-size: 2rem; color: var(--primary); display: block; margin-bottom: 0.5rem;">DP</strong>
+                    <div class="card card--partner center">
+                        <strong class="partner-code">DP</strong>
                         <span class="muted">DuPont</span>
                     </div>
-                    <div class="card center" style="padding: 2.5rem 1rem; border-radius: 1.25rem;">
-                        <strong
-                            style="font-family: var(--font-heading); font-size: 2rem; color: var(--primary); display: block; margin-bottom: 0.5rem;">3M</strong>
+                    <div class="card card--partner center">
+                        <strong class="partner-code">3M</strong>
                         <span class="muted">3M</span>
                     </div>
-                    <div class="card center" style="padding: 2.5rem 1rem; border-radius: 1.25rem;">
-                        <strong
-                            style="font-family: var(--font-heading); font-size: 2rem; color: var(--primary); display: block; margin-bottom: 0.5rem;">SK</strong>
+                    <div class="card card--partner center">
+                        <strong class="partner-code">SK</strong>
                         <span class="muted">Sikkens</span>
                     </div>
-                    <div class="card center" style="padding: 2.5rem 1rem; border-radius: 1.25rem;">
-                        <strong
-                            style="font-family: var(--font-heading); font-size: 2rem; color: var(--primary); display: block; margin-bottom: 0.5rem;">GL</strong>
+                    <div class="card card--partner center">
+                        <strong class="partner-code">GL</strong>
                         <span class="muted">Glasurit</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SUCURSALES-->
-        <section class="section alt" data-aos="fade-up" data-aos-duration="1000">
+        <section class="section alt" data-aos="fade-up">
             <div class="container">
                 <div class="center">
                     <p class="kicker">Encuéntranos</p>
@@ -257,158 +172,102 @@
                     <p class="lead">5 ubicaciones estratégicas para estar siempre cerca de ti.</p>
                 </div>
 
-                <div class="branch-layout" style="margin-top: 2.5rem;">
+                <div class="branch-layout">
                     <div class="branch-list">
-                        <button class="branch-btn active" onclick="selectBranch('esparta', this)">
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <h4 style="margin: 0; font-size: 1.1rem;">Sucursal Esparta</h4>
-                                    <p style="margin: 0.25rem 0 0; font-size: 0.85rem; opacity: 0.9;">AUTOCOLORS
-                                        ESPARTA, 2 Álamos</p>
-                                </div>
-                                <i class="fa-solid fa-chevron-right" style="font-size: 0.9rem;"></i>
-                            </div>
+                        <button type="button" class="branch-btn active" data-title="Sucursal Esparta" data-address="AUTOCOLORS ESPARTA, 2 Álamos. 03400" data-phone="55 7822 2221" aria-pressed="true">
+                            <span>
+                                <span class="branch-btn__name">Sucursal Esparta</span>
+                                <span class="branch-btn__addr">AUTOCOLORS ESPARTA, 2 Álamos</span>
+                            </span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
                         </button>
-
-                        <button class="branch-btn" onclick="selectBranch('tlahuac', this)">
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <h4 style="margin: 0; font-size: 1.1rem;">Sucursal Tláhuac</h4>
-                                    <p class="muted" style="margin: 0.25rem 0 0; font-size: 0.85rem;">Canal de Chalco
-                                        730, CDMX</p>
-                                </div>
-                                <i class="fa-solid fa-chevron-right" style="font-size: 0.9rem;"></i>
-                            </div>
+                        <button type="button" class="branch-btn" data-title="Sucursal Tláhuac" data-address="Canal de Chalco 730, CDMX, 09970" data-phone="55 7940 4687" aria-pressed="false">
+                            <span>
+                                <span class="branch-btn__name">Sucursal Tláhuac</span>
+                                <span class="branch-btn__addr">Canal de Chalco 730, CDMX</span>
+                            </span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
                         </button>
-
-                        <button class="branch-btn" onclick="selectBranch('izcalli', this)">
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <h4 style="margin: 0; font-size: 1.1rem;">Sucursal Izcalli</h4>
-                                    <p class="muted" style="margin: 0.25rem 0 0; font-size: 0.85rem;">Rosales 29B, San
-                                        Isidro</p>
-                                </div>
-                                <i class="fa-solid fa-chevron-right" style="font-size: 0.9rem;"></i>
-                            </div>
+                        <button type="button" class="branch-btn" data-title="Sucursal Izcalli" data-address="Rosales 29B. 005 San Isidro, 54730" data-phone="55 5868 6626" aria-pressed="false">
+                            <span>
+                                <span class="branch-btn__name">Sucursal Izcalli</span>
+                                <span class="branch-btn__addr">Rosales 29B, San Isidro</span>
+                            </span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
                         </button>
-
-                        <button class="branch-btn" onclick="selectBranch('naucalpan', this)">
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <h4 style="margin: 0; font-size: 1.1rem;">Sucursal Naucalpan</h4>
-                                    <p class="muted" style="margin: 0.25rem 0 0; font-size: 0.85rem;">Torre Azul 3,
-                                        Guadalupe las Torres</p>
-                                </div>
-                                <i class="fa-solid fa-chevron-right" style="font-size: 0.9rem;"></i>
-                            </div>
+                        <button type="button" class="branch-btn" data-title="Sucursal Naucalpan" data-address="Torre Azul 3. Guadalupe las Torres, 54743" data-phone="55 2505 2214" aria-pressed="false">
+                            <span>
+                                <span class="branch-btn__name">Sucursal Naucalpan</span>
+                                <span class="branch-btn__addr">Torre Azul 3, Guadalupe las Torres</span>
+                            </span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
                         </button>
-
-                        <button class="branch-btn" onclick="selectBranch('tultepec', this)">
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <h4 style="margin: 0; font-size: 1.1rem;">Sucursal Tultepec</h4>
-                                    <p class="muted" style="margin: 0.25rem 0 0; font-size: 0.85rem;">C. 10 de Junio,
-                                        Santiago Teyahualco</p>
-                                </div>
-                                <i class="fa-solid fa-chevron-right" style="font-size: 0.9rem;"></i>
-                            </div>
+                        <button type="button" class="branch-btn" data-title="Sucursal Tultepec" data-address="C. 10 de Junio, Santiago Teyahualco, 54980 Tultepec" data-phone="55 5885 6172" aria-pressed="false">
+                            <span>
+                                <span class="branch-btn__name">Sucursal Tultepec</span>
+                                <span class="branch-btn__addr">C. 10 de Junio, Santiago Teyahualco</span>
+                            </span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
                         </button>
                     </div>
 
-                    <div class="card" style="padding: 2rem; border-radius: 1.25rem;">
-                        <div style="border-radius: 0.75rem; overflow: hidden; height: 220px; margin-bottom: 1.5rem;"
-                            id="mapContainer">
-                            <iframe id="branchMap" src="" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="card branch-card">
+                        <div class="map-frame">
+                            <iframe id="branchMap" src="https://maps.google.com/maps?q=AUTOCOLORS+ESPARTA%2C+2+%C3%81lamos.+03400%2C+M%C3%A9xico&output=embed" title="Mapa de la sucursal" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
                         </div>
-                        <h3 id="branchTitle" style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.75rem;">
-                            Sucursal Esparta</h3>
-                        <div style="display: grid; gap: 0.5rem; margin-bottom: 1.5rem;" class="muted">
-                            <p style="margin: 0; display: flex; align-items: center; gap: 0.5rem;"><i
-                                    class="fa-solid fa-location-dot" style="color: var(--primary);"></i> <span
-                                    id="branchAddress">AUTOCOLORS ESPARTA, 2 Álamos. 03400</span></p>
-                            <p style="margin: 0; display: flex; align-items: center; gap: 0.5rem;"><i
-                                    class="fa-solid fa-phone" style="color: var(--primary);"></i> <span
-                                    id="branchPhone">55 7822 2221</span></p>
-                            <!-- <p style="margin: 0; display: flex; align-items: center; gap: 0.5rem;"><i class="fa-solid fa-envelope" style="color: var(--primary);"></i> <span id="branchEmail">correo@ejemplo.com</span></p> -->
-                            <!-- <p style="margin: 0; display: flex; align-items: center; gap: 0.5rem;"><i class="fa-solid fa-clock" style="color: var(--primary);"></i> <span id="branchHours">Lun - Sáb: 8:00 - 18:00</span></p> -->
+                        <h3 id="branchTitle">Sucursal Esparta</h3>
+                        <div class="info-list">
+                            <p class="info-row"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span id="branchAddress">AUTOCOLORS ESPARTA, 2 Álamos. 03400</span></p>
+                            <p class="info-row"><i class="fa-solid fa-phone" aria-hidden="true"></i> <a id="branchPhone" href="tel:+525578222221">55 7822 2221</a></p>
                         </div>
-                        <a href="contacto.html" class="btn btn-primary"
-                            style="border-radius: 0.75rem; padding: 0.75rem 1.5rem;">Contáctanos</a>
+                        <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" data-aos="fade-up" data-aos-duration="1000">
+        <section class="section" data-aos="fade-up">
             <div class="container">
                 <div class="center">
-                    <p class="kicker">BLOG</p>
+                    <p class="kicker">Blog</p>
                     <h2>Blog de Pintores</h2>
                     <p class="lead">Consejos, tendencias y técnicas del mundo de la pintura automotriz.</p>
                 </div>
-
-                <div class="grid grid-3" style="margin-top: 2.5rem;">
-                    <article class="card post" style="border-radius: 1.25rem; overflow: hidden;">
-                        <div style="position: relative;">
-                            <img src="img/Tecnicas.webp" alt="Técnicas profesionales"
-                                style="width: 100%; aspect-ratio: 16/10; object-fit: cover;">
-                            <span
-                                style="position: absolute; top: 1rem; left: 1rem; background: var(--primary); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 999px;">Técnicas</span>
+                <div class="grid grid-3">
+                    <article class="card post">
+                        <div class="post-media">
+                            <img src="img/Tecnicas.webp" alt="Técnicas profesionales de pintura automotriz" width="1344" height="768" loading="lazy">
+                            <span class="post-tag">Técnicas</span>
                         </div>
-                        <div class="post-body" style="padding: 1.5rem;">
-                            <p class="meta muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;"><i
-                                    class="fa-regular fa-user"></i> Carlos Méndez &nbsp;·&nbsp; <i
-                                    class="fa-regular fa-calendar"></i> 10 Mayo, 2026</p>
-                            <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 0.75rem;">Técnicas
-                                profesionales de pintura automotriz</h3>
-                            <p class="muted" style="font-size: 0.9rem; margin-bottom: 1.25rem;">Descubre las técnicas
-                                más avanzadas que los mejores pintores utilizan para lograr acabados perfectos en cada
-                                trabajo.</p>
-                            <a href="#" class="more"
-                                style="color: var(--primary); font-weight: 700; display: inline-flex; align-items: center; gap: 0.3rem;">Leer
-                                más <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+                        <div class="post-body">
+                            <p class="meta"><i class="fa-regular fa-user" aria-hidden="true"></i> Carlos Méndez &nbsp;·&nbsp; <i class="fa-regular fa-calendar" aria-hidden="true"></i> 10 Mayo, 2026</p>
+                            <h3>Técnicas profesionales de pintura automotriz</h3>
+                            <p class="post-excerpt">Descubre las técnicas más avanzadas que los mejores pintores utilizan para lograr acabados perfectos en cada trabajo.</p>
+                            <a href="#" class="more">Leer más <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </article>
-
-                    <article class="card post" style="border-radius: 1.25rem; overflow: hidden;">
-                        <div style="position: relative;">
-                            <img src="img/Guias.webp" alt="Cómo elegir la pintura correcta"
-                                style="width: 100%; aspect-ratio: 16/10; object-fit: cover;">
-                            <span
-                                style="position: absolute; top: 1rem; left: 1rem; background: var(--primary); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 999px;">Guías</span>
+                    <article class="card post">
+                        <div class="post-media">
+                            <img src="img/Guias.webp" alt="Cómo elegir la pintura correcta para tu vehículo" width="1344" height="768" loading="lazy">
+                            <span class="post-tag">Guías</span>
                         </div>
-                        <div class="post-body" style="padding: 1.5rem;">
-                            <p class="meta muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;"><i
-                                    class="fa-regular fa-user"></i> Ana López &nbsp;·&nbsp; <i
-                                    class="fa-regular fa-calendar"></i> 5 Mayo, 2026</p>
-                            <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 0.75rem;">Cómo elegir la
-                                pintura correcta para tu vehículo</h3>
-                            <p class="muted" style="font-size: 0.9rem; margin-bottom: 1.25rem;">Guía completa para
-                                seleccionar el tipo de pintura ideal según el acabado que deseas obtener.</p>
-                            <a href="#" class="more"
-                                style="color: var(--primary); font-weight: 700; display: inline-flex; align-items: center; gap: 0.3rem;">Leer
-                                más <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+                        <div class="post-body">
+                            <p class="meta"><i class="fa-regular fa-user" aria-hidden="true"></i> Ana López &nbsp;·&nbsp; <i class="fa-regular fa-calendar" aria-hidden="true"></i> 5 Mayo, 2026</p>
+                            <h3>Cómo elegir la pintura correcta para tu vehículo</h3>
+                            <p class="post-excerpt">Guía completa para seleccionar el tipo de pintura ideal según el acabado que deseas obtener.</p>
+                            <a href="#" class="more">Leer más <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </article>
-
-                    <article class="card post" style="border-radius: 1.25rem; overflow: hidden;">
-                        <div style="position: relative;">
-                            <img src="img/Tendencias.webp" alt="Tendencias 2026 en colores"
-                                style="width: 100%; aspect-ratio: 16/10; object-fit: cover;">
-                            <span
-                                style="position: absolute; top: 1rem; left: 1rem; background: var(--primary); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 999px;">Tendencias</span>
+                    <article class="card post">
+                        <div class="post-media">
+                            <img src="img/Tendencias.webp" alt="Tendencias 2026 en colores automotrices" width="1344" height="768" loading="lazy">
+                            <span class="post-tag">Tendencias</span>
                         </div>
-                        <div class="post-body" style="padding: 1.5rem;">
-                            <p class="meta muted" style="font-size: 0.85rem; margin-bottom: 0.5rem;"><i
-                                    class="fa-regular fa-user"></i> Roberto García &nbsp;·&nbsp; <i
-                                    class="fa-regular fa-calendar"></i> 28 Abril, 2026</p>
-                            <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 0.75rem;">Tendencias 2026 en
-                                colores automotrices</h3>
-                            <p class="muted" style="font-size: 0.9rem; margin-bottom: 1.25rem;">Los colores más
-                                solicitados este año y cómo aplicar las nuevas tendencias en tu taller.</p>
-                            <a href="#" class="more"
-                                style="color: var(--primary); font-weight: 700; display: inline-flex; align-items: center; gap: 0.3rem;">Leer
-                                más <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+                        <div class="post-body">
+                            <p class="meta"><i class="fa-regular fa-user" aria-hidden="true"></i> Roberto García &nbsp;·&nbsp; <i class="fa-regular fa-calendar" aria-hidden="true"></i> 28 Abril, 2026</p>
+                            <h3>Tendencias 2026 en colores automotrices</h3>
+                            <p class="post-excerpt">Los colores más solicitados este año y cómo aplicar las nuevas tendencias en tu taller.</p>
+                            <a href="#" class="more">Leer más <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </article>
                 </div>
@@ -419,20 +278,17 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
-                <a href="index.html" class="logo" style="color: #fff;"><img src="img/LogoUrban.webp"
-                        alt="Urban"><span>URBAN</span></a>
-                <p style="margin-top: 1rem; font-size: 0.9rem;">Tu distribuidor de confianza en pintura automotriz.
-                    Calidad, variedad y servicio profesional en cada sucursal.</p>
+                <a href="index.html" class="logo"><img src="img/LogoUrban.webp" alt="Logo de URBAN" width="40" height="40" loading="lazy"><span>URBAN</span></a>
+                <p class="footer-text">Tu distribuidor de confianza en pintura automotriz. Calidad, variedad y servicio profesional en cada sucursal.</p>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank" aria-label="Facebook"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div>
-                <h4 style="margin-bottom: 1.2rem;">Navegación</h4>
+                <h4>Navegación</h4>
                 <ul>
-                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="sucursales.html">Sucursales</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
@@ -440,19 +296,14 @@
                 </ul>
             </div>
             <div>
-                <h4 style="margin-bottom: 1.2rem;">Contacto</h4>
-                <p style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;"><i
-                        class="fa-solid fa-phone" style="color: var(--primary);"></i> (555) 123-4567</p>
-                <p style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;"><i
-                        class="fa-solid fa-envelope" style="color: var(--primary);"></i> info@urbanpinturas.com</p>
-                <p style="display: flex; align-items: center; gap: 0.5rem;"><i class="fa-solid fa-clock"
-                        style="color: var(--primary);"></i> Lun - Sáb: 8:00 - 18:00</p>
+                <h4>Contacto</h4>
+                <p class="footer-line"><i class="fa-solid fa-phone" aria-hidden="true"></i> (555) 123-4567</p>
+                <p class="footer-line"><i class="fa-solid fa-envelope" aria-hidden="true"></i> info@urbanpinturas.com</p>
+                <p class="footer-line"><i class="fa-solid fa-clock" aria-hidden="true"></i> Lun - Sáb: 8:00 - 18:00</p>
             </div>
             <div>
-                <h4 style="margin-bottom: 1.2rem;">Sucursal Principal</h4>
-                <p style="display: flex; align-items: flex-start; gap: 0.5rem;"><i class="fa-solid fa-location-dot"
-                        style="color: var(--primary); margin-top: 0.2rem;"></i> Av. Revolución 1520, Col. Centro, Ciudad
-                    de México, CP 06000</p>
+                <h4>Sucursal Principal</h4>
+                <p class="footer-line"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Av. Revolución 1520, Col. Centro, Ciudad de México, CP 06000</p>
             </div>
         </div>
         <div class="container footer-bottom">
@@ -462,58 +313,6 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ once: true, offset: 80, duration: 800 });
-
-        const branchesData = {
-            esparta: {
-                title: "Sucursal Esparta",
-                address: "AUTOCOLORS ESPARTA, 2 Álamos. 03400",
-                phone: "55 7822 2221",
-                map: "" // Reemplazar con iframe 
-                /* email: "", hours: "" */
-            },
-            tlahuac: {
-                title: "Sucursal Tláhuac",
-                address: "Canal de Chalco 730, CDMX, 09970",
-                phone: "55 7940 4687",
-                map: "" // Reemplazar con iframe
-                /* email: "", hours: "" */
-            },
-            izcalli: {
-                title: "Sucursal Izcalli",
-                address: "Rosales 29B. 005 San Isidro, 54730",
-                phone: "55 5868 6626",
-                map: "" // Reemplazar con iframe URL de Izcalli
-                /* email: "", hours: "" */
-            },
-            naucalpan: {
-                title: "Sucursal Naucalpan",
-                address: "Torre Azul 3. Guadalupe las Torres, 54743",
-                phone: "55 2505 2214",
-                map: "" // Reemplazar con iframe URL de Naucalpan
-                /* email: "", hours: "" */
-            },
-            tultepec: {
-                title: "Sucursal Tultepec",
-                address: "C. 10 de Junio, Santiago Teyahualco, 54980 Tultepec",
-                phone: "55 5885 6172",
-                map: "" // Reemplazar con iframe URL de Tultepec
-                /* email: "", hours: "" */
-            }
-        };
-
-        function selectBranch(key, element) {
-            document.querySelectorAll('.branch-btn').forEach(btn => btn.classList.remove('active'));
-            element.classList.add('active');
-
-            const b = branchesData[key];
-            document.getElementById('branchTitle').innerText = b.title;
-            document.getElementById('branchAddress').innerText = b.address;
-            document.getElementById('branchPhone').innerText = b.phone;
-            // Actualizar el mapa si se quiere 
-        }
-    </script>
     <script src="script.js"></script>
 </body>
 
