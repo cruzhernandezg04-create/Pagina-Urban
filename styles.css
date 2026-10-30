@@ -307,10 +307,12 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 
 .hero-image-container {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .5);
+  animation: float 3s ease-in-out 1s infinite;
+}
+
+@keyframes float {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: 0 -14px; }
 }
 
 .hero-image-container img {
